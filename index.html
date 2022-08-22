@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <meta http-equiv="refresh" content="1">
+    <title>RELOJ</title>
+</head>
+<body>
+    <div>
+        <div class="bloque">
+            <p id="fecha"></p>
+        </div>
+        <div class="bloque">
+            <p id="reloj"></p>
+        </div>
+    </div>
+    <script>
+        var fecha = new Date();
+        document.getElementById("fecha").innerHTML =fecha.toDateString();
+        if(fecha.getMinutes()<10){
+            if(fecha.getSeconds()<10){
+                document.getElementById("reloj").innerHTML = fecha.getHours()+":0"+fecha.getMinutes()+":0"+fecha.getSeconds(); 
+            }
+            else{
+                document.getElementById("reloj").innerHTML = fecha.getHours()+":0"+fecha.getMinutes()+":"+fecha.getSeconds(); 
+            }
+        }
+        else{
+            if(fecha.getSeconds()<10){
+                document.getElementById("reloj").innerHTML = fecha.getHours()+":"+fecha.getMinutes()+":0"+fecha.getSeconds(); 
+            }
+            else{
+                document.getElementById("reloj").innerHTML = fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds(); 
+            }
+        } 
+        
+    </script>
+</body>
+</html>

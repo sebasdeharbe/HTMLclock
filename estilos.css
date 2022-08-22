@@ -1,0 +1,27 @@
+*{
+    background-color: aliceblue;
+}
+div{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bloque{
+    margin:0 auto;
+    margin-top:10px;
+    height: 100px;
+    width: 350px;
+    border: 2px dashed black;
+    font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.bloque p{
+    background-color: bisque;
+}
